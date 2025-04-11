@@ -55,9 +55,9 @@
       var loaderUrl = buildUrl + "/Projects 2.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Projects 2.data",
-        frameworkUrl: buildUrl + "/Projects 2.framework.js",
-        codeUrl: buildUrl + "/Projects 2.wasm",
+        dataUrl: buildUrl + "/Projects 2.data.gz",
+        frameworkUrl: buildUrl + "/Projects 2.framework.js.gz",
+        codeUrl: buildUrl + "/Projects 2.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "LegoBot",
@@ -102,6 +102,7 @@
         canvas.style.height = "1920px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/Projects 2.jpg') center / cover";
       document.querySelector("#unity-loading-bar").style.display = "block";
 
       var script = document.createElement("script");
